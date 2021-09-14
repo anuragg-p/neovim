@@ -1,3 +1,4 @@
+" this is just a comment
 " this is for the auto non selection when you are in insert mode
 autocmd InsertEnter * :let @/=""
 
