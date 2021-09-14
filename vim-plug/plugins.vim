@@ -36,4 +36,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak'  
     Plug 'unblevable/quick-scope'
     Plug 'liuchengxu/vim-which-key'
+    "nvim git integration
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
 call plug#end()
