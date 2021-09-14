@@ -34,4 +34,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " startify for saving sessions
     Plug 'mhinz/vim-startify' 
     Plug 'justinmk/vim-sneak'  
+    Plug 'unblevable/quick-scope'
+    Plug 'liuchengxu/vim-which-key'
 call plug#end()

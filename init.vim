@@ -10,4 +10,5 @@ source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/session/start-screen.vim
-
+source $HOME/.config/nvim/keys/which-key.vim
+source $HOME/.config/nvim/plug-config/quickscope.vim
