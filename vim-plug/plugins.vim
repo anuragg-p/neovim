@@ -15,8 +15,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " gruvbox theme
-    Plug 'morhetz/gruvbox'
-    "coc
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -36,9 +34,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak'  
     Plug 'unblevable/quick-scope'
     Plug 'liuchengxu/vim-which-key'
-    "nvim git integration
-    Plug 'mhinz/vim-signify'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
+    Plug 'lifepillar/vim-gruvbox8'
+    Plug 'tpope/vim-commentary'
 call plug#end()
+
+colorscheme gruvbox8_hard
