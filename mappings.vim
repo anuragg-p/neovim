@@ -1,6 +1,5 @@
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
-
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resize windows
@@ -23,13 +22,15 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
-nnoremap <C-s> :w<CR>
+nnoremap <C-W> :w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" for saving 
+
 
 " Better tabbing
 vnoremap < <gv
@@ -43,6 +44,5 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
-
 
 autocmd InsertEnter * :let @/=""
