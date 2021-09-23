@@ -3,7 +3,7 @@
 
 "some mappings which doesnt work outside of init.vim dont know why
 nnoremap <C-W> :w<CR>
-
+:set scrolloff=2
 "when texts are found this automatically clears it when we are in insert mode
 autocmd InsertEnter * :let @/=""
 
@@ -13,7 +13,6 @@ hi Normal guibg=NONE ctermbg=NONE
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 " For Vim<8, replace EndOfBuffer by NonText
 autocmd vimenter * hi EndOfBuffer guibg=NONE ctermbg=NONE
-
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim 
 source $HOME/.config/nvim/keys/mappings.vim
