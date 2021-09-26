@@ -17,6 +17,8 @@
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-  }
+  },
+
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
 
 }
