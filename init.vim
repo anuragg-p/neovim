@@ -2,6 +2,7 @@
 " this is for the auto non selection when you are in insert mode
 
 "some mappings which doesnt work outside of init.vim dont know why
+set relativenumber
 nnoremap <C-W> :w<CR>
 :set scrolloff=2
 "when texts are found this automatically clears it when we are in insert mode
@@ -24,8 +25,7 @@ source $HOME/.config/nvim/session/start-screen.vim
 source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/signify.vim
-source $HOME/.config/nvim/plug-config/floaterm.vim
-
+source $HOME/.config/nvim/plug-config/alvan-vim-closetag.vim
 "prettier setup command
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile

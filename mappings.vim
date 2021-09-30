@@ -1,4 +1,4 @@
-" Better nav for omnicomplete
+ " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 

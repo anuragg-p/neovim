@@ -36,6 +36,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     Plug 'lifepillar/vim-gruvbox8'
     Plug 'tpope/vim-commentary'
+    "react snippets support
+    Plug 'SirVer/ultisnips'
+    Plug 'mlaursen/vim-react-snippets'
+    "honza snippets
+    Plug 'honza/vim-snippets'
+    " for auto close tags   
+    Plug 'alvan/vim-closetag'
+
+    
 call plug#end()
 
 colorscheme gruvbox8_hard
