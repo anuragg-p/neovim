@@ -38,7 +38,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 let g:floaterm_opener='edit'
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
-
+" nnoremap <Leader>o o<Esc>^Da
+" nnoremap <Leader>O O<Esc>^Da
+nnoremap <Leader>t :FloatermNew<CR>
 autocmd InsertEnter * :let @/=""

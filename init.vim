@@ -1,10 +1,13 @@
 " this is just a comment
+
 " this is for the auto non selection when you are in insert mode
 
 "some mappings which doesnt work outside of init.vim dont know why
 set relativenumber
 nnoremap <C-W> :w<CR>
-nnoremap <C-N> :q<CR>
+nnoremap <C-N> :bw<CR>
+
+nmap <Leader>t :FloatermNew<CR>
 :set scrolloff=2
 "when texts are found this automatically clears it when we are in insert mode
 autocmd InsertEnter * :let @/=""

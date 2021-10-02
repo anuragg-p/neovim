@@ -27,19 +27,12 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
 let g:which_key_map['f'] = [ ':Prettier'                     , 'Prettier' ]
-let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['r'] = [ ':wa'                    , 'save all buffers' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
-let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
-let g:which_key_map['v'] = [ ':vsp'                     , 'vertical split']
 let g:which_key_map[' '] = [':FloatermNew --wintype=popup --height=16 fzf' ,  'allFiles']
-let g:which_key_map['b'] = [':sp'                    ,  'splitBelow']
 let g:which_key_map['w'] = [ 'windows'                    , 'window' ]
 let g:which_key_map['u'] = [':FloatermNew',                 'floaterm']
 
-" s is for search 
-" \ 'b' : [':Blines'       , 'blines'],
-" \ 'B' : [':Buffers'      , 'open buffers'],
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
       \ '/' : [':History/'     , 'history'],
@@ -92,15 +85,10 @@ let g:which_key_map.u = {
       \ 'u' : [':FloatermNew --wintype=popup --height=30 --width=90'        , 'terminal'],
       \ 'f' : [':FloatermNew  --wintype=popup --height=15 fzf' , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'n' : [':FloatermNew  --wintype=popup --height=15 node' , 'node'],
-      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
+      \ 'n' : [':FloatermNew  --wintype=popup --height=15 --name=node node ' , 'node'],
       \ 'p' : [':FloatermNew python3'                            , 'python'],
-      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
-      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
-      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
       \ 'i' : [':FloatermNew --wintype=popup --height=15  neovim'                              , 'nv'],
       \ }
 " Register which key map
+
 call which_key#register('<Space>', "g:which_key_map")
