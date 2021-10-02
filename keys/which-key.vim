@@ -32,10 +32,10 @@ let g:which_key_map['r'] = [ ':wa'                    , 'save all buffers' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ ':vsp'                     , 'vertical split']
-let g:which_key_map[' '] = [':ls|FZF'                    ,  'buffers']
+let g:which_key_map[' '] = [':FloatermNew --wintype=popup --height=16 fzf' ,  'allFiles']
 let g:which_key_map['b'] = [':sp'                    ,  'splitBelow']
 let g:which_key_map['w'] = [ 'windows'                    , 'window' ]
-
+let g:which_key_map['u'] = [':FloatermNew',                 'floaterm']
 
 " s is for search 
 " \ 'b' : [':Blines'       , 'blines'],
@@ -85,5 +85,22 @@ let g:which_key_map['w'] = {
       \ 'v' : ['<C-W>v'     , 'split-window-below']    ,
       \ '?' : ['Windows'    , 'fzf-window']            ,
       \ } 
+
+
+let g:which_key_map.u = {
+      \ 'name' : '+terminal' ,
+      \ 'u' : [':FloatermNew --wintype=popup --height=30 --width=90'        , 'terminal'],
+      \ 'f' : [':FloatermNew  --wintype=popup --height=15 fzf' , 'fzf'],
+      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
+      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
+      \ 'n' : [':FloatermNew  --wintype=popup --height=15 node' , 'node'],
+      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
+      \ 'p' : [':FloatermNew python3'                            , 'python'],
+      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
+      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
+      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ 'i' : [':FloatermNew --wintype=popup --height=15  neovim'                              , 'nv'],
+      \ }
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

@@ -43,8 +43,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
     " for auto close tags   
     Plug 'alvan/vim-closetag'
-
     
+    "emmet for good html tags
+    Plug 'mattn/emmet-vim'
+    "vim-floaterm
+    Plug 'voldikss/vim-floaterm'
+
+
+
 call plug#end()
 
 colorscheme gruvbox8_hard

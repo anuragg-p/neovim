@@ -2,11 +2,6 @@
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
-" Use alt + hjkl to resize windows
-" nnoremap <M-j>    :resize -2<CR>
-" nnoremap <M-k>    :resize +2<CR>
-" nnoremap <M-i>    :vertical resize -2<CR>
-" nnoremap <M-g>    :vertical resize +2<CR>
 
 " I hate escape more than anything else
 inoremap jk <Esc>
@@ -25,7 +20,8 @@ nnoremap <S-TAB> :bprevious<CR>
 nnoremap <C-W> :w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
-" Use control-c instead of escape
+nnoremap <C-N> :q<CR>
+ " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -41,7 +37,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
+let g:floaterm_opener='edit'
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 

@@ -4,6 +4,7 @@
 "some mappings which doesnt work outside of init.vim dont know why
 set relativenumber
 nnoremap <C-W> :w<CR>
+nnoremap <C-N> :q<CR>
 :set scrolloff=2
 "when texts are found this automatically clears it when we are in insert mode
 autocmd InsertEnter * :let @/=""
@@ -26,8 +27,13 @@ source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/alvan-vim-closetag.vim
-"prettier setup command
+source $HOME/.config/nvim/plug-config/emmet.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim
 
+
+
+
+"prettier setup command
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 
