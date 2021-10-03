@@ -26,13 +26,22 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
-let g:which_key_map['f'] = [ ':Prettier'                     , 'Prettier' ]
+let g:which_key_map['p'] = [ ':Prettier'                     , 'Prettier' ]
 let g:which_key_map['r'] = [ ':wa'                    , 'save all buffers' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
 let g:which_key_map[' '] = [':FloatermNew --wintype=popup --height=16 fzf' ,  'allFiles']
 let g:which_key_map['w'] = [ 'windows'                    , 'window' ]
 let g:which_key_map['u'] = [':FloatermNew',                 'floaterm']
+let g:which_key_map['j'] = [':FloatermToggle',                 'floatermToggle']
+let g:which_key_map['fs'] = [':FloatermSend' , 'floatermSend']
 
+
+
+let g:which_key_map.fs = {
+      \'name': '+floatermSend',
+      \'n': [':FloatermSend --name=node'  ,'floatermSendNode'],
+      \'an': [':%FloatermSend --name=node'  ,'fltrmSndAll'],
+      \}
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
       \ '/' : [':History/'     , 'history'],
@@ -47,7 +56,7 @@ let g:which_key_map.s = {
       \ 'H' : [':History:'     , 'command history'],
       \ 'l' : [':Lines'        , 'lines'] ,
       \ 'm' : [':Marks'        , 'marks'] ,
-       \ 'M' : [':Maps'         , 'normal maps'] ,
+      \ 'M' : [':Maps'         , 'normal maps'] ,
       \ 'p' : [':Helptags'     , 'help tags'] ,
       \ 'P' : [':Tags'         , 'project tags'],
       \ 's' : [':Snippets'     , 'snippets'],

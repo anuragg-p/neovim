@@ -48,10 +48,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/emmet-vim'
     "vim-floaterm
     Plug 'voldikss/vim-floaterm'
+    Plug 'joshdick/onedark.vim'
 
 
 
 
 call plug#end()
 
-colorscheme gruvbox8_hard
+colorscheme onedark
+
+let g:airline_theme='onedark'

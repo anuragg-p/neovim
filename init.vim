@@ -6,7 +6,6 @@
 set relativenumber
 nnoremap <C-W> :w<CR>
 nnoremap <C-N> :bw<CR>
-
 nmap <Leader>t :FloatermNew<CR>
 :set scrolloff=2
 "when texts are found this automatically clears it when we are in insert mode
