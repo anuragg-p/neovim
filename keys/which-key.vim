@@ -93,7 +93,7 @@ let g:which_key_map.u = {
       \ 'name' : '+terminal' ,
       \ 'u' : [':FloatermNew --wintype=popup --height=30 --width=90'        , 'terminal'],
       \ 'f' : [':FloatermNew  --wintype=popup --height=15 fzf' , 'fzf'],
-      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
+      \ 'g' : [':FloatermNew  lazygit'                           , 'git'],
       \ 'n' : [':FloatermNew  --wintype=popup --height=15 --name=node node ' , 'node'],
       \ 'p' : [':FloatermNew python3'                            , 'python'],
       \ 'i' : [':FloatermNew --wintype=popup --height=15  neovim'                              , 'nv'],
