@@ -9,9 +9,10 @@ let g:floaterm_opener='edit'
 
 
 " Configuration example
-let g:floaterm_keymap_kill    = '<F5>'
-let g:floaterm_keymap_new   = '<F6>'
-let g:floaterm_keymap_next   = '<C-p>'
+let g:floaterm_keymap_kill    = '<C-y>'
+"make a new floaterm
+let g:floaterm_keymap_new   = '<C-p>'
+let g:floaterm_keymap_next   = '<C-n>'
 let g:floaterm_keymap_toggle = '<C-Space>'
 
 " Set floating window border line color to cyan, and background to orange
