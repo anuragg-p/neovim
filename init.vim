@@ -2,7 +2,8 @@
 
 " this is for the auto non selection when you are in insert mode
 
-
+nnoremap ; :
+vnoremap ; :
 "some mappings which doesnt work outside of init.vim dont know why
 set relativenumber
 nnoremap <C-W> :w<CR>
